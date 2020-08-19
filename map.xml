@@ -1,0 +1,36 @@
+<rooms>
+	<room name="Your bedroom" keyword="bedroom">
+		<description>This is a place to sleep. A hatch in the corner leads down.</description>
+		<item name="spellbook" weapon="false" dmg="0" speed="0">A book with some spells in it</item>
+		<item name="wizard cloak" weapon="false" dmg="0" speed="0">A cloak the purple of the night sky, complete with
+			moons and stars</item>
+		<npcs>Merlin Gandalf</npcs>
+		<exits>-,-,-,-,-,livingroom</exits>
+	</room>
+	<room name="The Plaza" keyword="plaza">
+		<description>This is a large open area with lots of people. Your wizardly tower to the north casts a long shadow over the plaza.
+		</description>
+		<item name="rock" weapon="true" dmg="2" speed="2">This is just a rock.</item>
+		<npcs>Witch</npcs>
+		<exits>livingroom,-,-,-,-,-</exits>
+	</room>
+	<room name="Your living room" keyword="livingroom">
+		<description>The living room of your wizardly tower. A ladder leads upwards. To the south is a wooden door leading to the plaza. A hallway leads west to your alchemy lab. 
+		</description>
+		<npcs></npcs>
+		<exits>-,plaza,-,lab,bedroom,-</exits>
+	</room>
+	<room name="Your alchemy lab" keyword="lab">
+		<description>Here's where you cook up all sorts of crazy potions. A metal staircase goes downwards.
+		</description>
+		<npcs></npcs>
+		<item name="potion of destruction" weapon="false" dmg="0" speed="0">No one knows what this drink might be capable of</item>
+		<exits>-,-,livingroom,-,-,dungeon</exits>
+	</room>
+	<room name="Dungeon" keyword="dungeon">
+		<description>A dank, dark place full of green fuzz and a spooky atmosphere. A not-so-secret passage to the south leads to the plaza, and a metal staircase spirals upwards into the darkness.</description>
+		<npcs>Shrek</npcs>
+		<item name="green fuzz" weapon="true" dmg="2" speed="3">A clump of green stuff of questionable origin</item>
+		<exits>-,plaza,-,-,lab,-</exits>
+	</room>
+</rooms>
