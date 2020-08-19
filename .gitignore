@@ -15,6 +15,10 @@ local.properties
 .loadpath
 .recommenders
 
+coursier
+.bloop
+.metals
+.vscode
 # External tool builders
 .externalToolBuilders/
 

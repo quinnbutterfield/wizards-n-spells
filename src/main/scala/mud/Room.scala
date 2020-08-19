@@ -37,6 +37,7 @@ class Room(name: String, k: String, desc: String, exitNames: Array[String], priv
       sender ! Player.TakeExit(getExit(dir))
     //sender ! Player.NotInCombat
     case FindPlayer(p) =>
+      
       players.find(j => j.path.name == p) match {
         case Some(i) =>
           sender ! Player.InRoom(i)
